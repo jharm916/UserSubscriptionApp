@@ -1,0 +1,32 @@
+[
+	{
+		"userId": "JohnMadden1",
+		"name": "John Madden",
+		"email": "john_madden@gmail.com"
+	},
+	{
+		"userId": "MikeyJones54",
+		"name": "Mikey Jones",
+		"email": "mikey_jones54@gmail.com"
+	},
+	{
+		"userId": "FortressKing17",
+		"name": "Paul Williams",
+		"email": "FortressKing17@yahoo.com"
+	},
+	{
+		"userId": "FlowerGirl77",
+		"name": "Rose Norman",
+		"email": "rose.norman22@gmail.com"
+	},
+	{
+		"userId": "FlyBoy101",
+		"name": "Mike Steel",
+		"email": "mike___steel@aol.com"
+	},
+	{
+		"userId": "DogLover85",
+		"name": "Sarah Johnson",
+		"email": "doglover85@customdomain.com"
+	}
+]

@@ -1,0 +1,19 @@
+com/application/UserSubscriptionApplication.java
+ com.application.UserSubscriptionApplication
+com/application/dataModel/UserSubscriptions.java
+ com.application.dataModel.UserSubscriptions
+com/application/dataModel/Subscription.java
+ com.application.dataModel.Subscription
+com/application/appServices/SubscriptionService.java
+ com.application.appServices.SubscriptionService
+com/application/dataModel/InitialData.java
+ com.application.dataModel.InitialData
+ com.application.dataModel.InitialData$1
+ com.application.dataModel.InitialData$2
+ com.application.dataModel.InitialData$3
+com/application/userController/UserSubscriptionController.java
+ com.application.userController.UserSubscriptionController
+com/application/dataModel/User.java
+ com.application.dataModel.User
+com/application/appServices/UserService.java
+ com.application.appServices.UserService

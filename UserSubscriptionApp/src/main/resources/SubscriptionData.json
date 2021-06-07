@@ -1,0 +1,27 @@
+[
+	{
+		"subscriptionId": "Hulu",
+		"description": "Video streaming service",
+		"monthlyCost": 9.99
+	},
+	{
+		"subscriptionId": "Netflix",
+		"description": "Video streaming service",
+		"monthlyCost": 12.99
+	},
+	{
+		"subscriptionId": "Amazon Prime",
+		"description": "Premium Amazon membership includes delivery and video benefits",
+		"monthlyCost": 14.99
+	},
+	{
+		"subscriptionId": "Xbox Live",
+		"description": "Allows xbox users to play against each other online",
+		"monthlyCost": 14.99
+	},
+	{
+		"subscriptionId": "LeetCode",
+		"description": "Coding challenges with company specific questions and answers",
+		"monthlyCost": 34.99
+	}
+]

@@ -1,0 +1,48 @@
+[
+	{
+		"userId": "JohnMadden1",
+		"subscriptions": [
+			"Hulu",
+			"Netflix"
+		]
+	},
+	{
+		"userId": "MikeyJones54",
+		"subscriptions": [
+			"Netflix",
+			"Amazon Prime",
+			"Xbox Live"
+		]
+	},
+	{
+		"userId": "FortressKing17",
+		"subscriptions": [
+			"Netflix",
+			"Xbox Live",
+			"LeetCode"
+		]
+	},
+	{
+		"userId": "FlowerGirl77",
+		"subscriptions": [
+			"Netflix",
+			"Amazon Prime"
+		]
+	},
+	{
+		"userId": "FlyBoy101",
+		"subscriptions": [
+			"Netflix",
+			"Amazon Prime",
+			"Xbox Live",
+			"LeetCode"
+		]
+	},
+	{
+		"userId": "DogLover85",
+		"subscriptions": [
+			"Hulu",
+			"Netflix"
+		]
+	}
+]

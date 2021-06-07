@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.application.dataModel.User;
@@ -38,10 +39,10 @@ public class UserSubscriptionController {
 		boolean sorted = subscriptionService.sortSubscriptions(userId);
 		if (sorted)
 			return ResponseEntity.ok("sorted");
-		return ResponseEntity.badRequest().build();
+		return ResponseEntity.ok("user not found");
 	}
 	
-	@GetMapping("/users/put/{userId}/{name}/{email}")
+	@PutMapping("/users/put/{userId}/{name}/{email}")
 	public ResponseEntity<String> insertUser(@PathVariable String userId, @PathVariable String name,
 				@PathVariable String email) {
 		boolean inserted = userService.insertUser(userId, name, email);
@@ -55,7 +56,7 @@ public class UserSubscriptionController {
 		return subscriptionService.retrieveSubscription(subscriptionId);
 	}
 	
-	@GetMapping("/subscriptions/put/{subscriptionId}/{description}/{monthlyCost}")
+	@PutMapping("/subscriptions/put/{subscriptionId}/{description}/{monthlyCost}")
 	public ResponseEntity<String> insertSubscription(@PathVariable String subscriptionId, @PathVariable String description,
 				@PathVariable double monthlyCost) {
 		boolean inserted = subscriptionService.insertSubscription(subscriptionId, description, monthlyCost);
@@ -64,7 +65,7 @@ public class UserSubscriptionController {
 		return ResponseEntity.badRequest().build();
 	}
 	
-	@GetMapping("/subscriptions/subscriptionForUser/{userId}/{subscriptionId}")
+	@PutMapping("/subscriptions/subscriptionForUser/{userId}/{subscriptionId}")
 	public ResponseEntity<String> insertSubscriptionForUser(@PathVariable String userId, @PathVariable String subscriptionId) {
 		boolean inserted = subscriptionService.insertSubscriptionForUser(userId, subscriptionId);
 		if (inserted)

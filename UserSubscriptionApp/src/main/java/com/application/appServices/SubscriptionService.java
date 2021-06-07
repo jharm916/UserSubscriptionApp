@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 
 import com.application.dataModel.Subscription;
 import com.application.dataModel.InitialData;
@@ -59,9 +60,7 @@ public class SubscriptionService {
 	 */
 	public boolean sortSubscriptions(String userId) {
 		if (userId != null && data.userToSubscriptions.containsKey(userId)) {
-			String[] subscriptions = data.userToSubscriptions.get(userId).toArray(new String[0]);
-			Arrays.sort(subscriptions);
-			data.userToSubscriptions.put(userId, Arrays.asList(subscriptions));
+			data.userToSubscriptions.get(userId).sort(Comparator.naturalOrder());
 			return true;
 		} else {
 			return false;

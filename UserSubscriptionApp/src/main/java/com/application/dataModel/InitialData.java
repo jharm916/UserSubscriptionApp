@@ -185,6 +185,9 @@ public class InitialData {
 			}
 			if (this.userToSubscriptions.containsKey(userId)) {
 				List<String> subscribed = this.userToSubscriptions.get(userId);
+				if (subscribed == null) {
+					subscribed = new ArrayList<String>();
+				}
 				if (!subscribed.contains(subscriptionId)) {
 					subscribed.add(subscriptionId);
 					// note this can result in an unsorted list
@@ -193,7 +196,7 @@ public class InitialData {
 					return false; // handle duplicate by not adding it
 				}
 			} else {
-				List<String> newList = new ArrayList<>();
+				List<String> newList = new ArrayList<String>();
 				newList.add(subscriptionId);
 				this.userToSubscriptions.put(userId, newList);
 			}
